@@ -151,9 +151,6 @@ Criar um site capaz de gerenciar o [banco de dados](../back-end/), incluindo faz
 </details>
 
 
-
-
-
 ## Construído com
 
 - JavaScript
@@ -162,7 +159,7 @@ Criar um site capaz de gerenciar o [banco de dados](../back-end/), incluindo faz
 
 ## Veja a aplicação rodando
 
-`Acesse:` [Link]
+`Acesse:` https://hiagobriano.github.io/Delivery_app_deploy_front
 
 #### Primeiro acesso?
 > É importante saber que para fazer o cadastro é preciso colocar um e-mail em um formato valido e uma senha de pelo menos 6 caracteres.

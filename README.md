@@ -41,7 +41,7 @@ A distribuidora de cervejas da dona Tereza está se informatizando! 🚀 Seu neg
 
 Criei um site de lista de tarefas para os colaboradores adicionarem suas tarefas. É possível consultar a tarefa de qualquer lugar, basta fazer login com a conta criada.
 
- `Veja a aplicação rodando:` [Link]
+ `Veja a aplicação rodando:` https://hiagobriano.github.io/Delivery_app_deploy_front
 
 #### Primeiro acesso?
 > É importante saber que para fazer o cadastro é preciso colocar um e-mail em um formato valido e uma senha de pelo menos 6 caracteres.
@@ -69,13 +69,13 @@ Criei um site de lista de tarefas para os colaboradores adicionarem suas tarefas
 Para clonar o repositório usando HTTPS:
 
 ```
-git clone [Link]
+git clone https://github.com/HiagoBriano/Delivery_App.git
 ```
 
 Para clonar usando SSH:
 
 ```
-git clone [Link]
+git clone git@github.com:HiagoBriano/Delivery_App.git
 ```
 </details>
 
@@ -87,7 +87,7 @@ git clone [Link]
 Entre na pasta do projeto:
 
 ```
-cd [nome do repositorio]/backend
+cd Delivery_App/backend
 ```
 
 Instale as dependências do projeto:
@@ -114,7 +114,7 @@ npm run dev
 Entre na pasta do projeto:
 
 ```
-cd [nome do repositorio]/frontend
+cd Delivery_App/frontend
 ```
 
 Instale as dependencias:
@@ -153,13 +153,13 @@ http://localhost:3000/
 Para clonar o repositório usando HTTPS:
 
 ```
-git clone [Link]
+git clone https://github.com/HiagoBriano/Delivery_App.git
 ```
 
 Para clonar usando SSH:
 
 ```
-git clone [Link]
+git clone git@github.com:HiagoBriano/Delivery_App.git
 ```
 </details>
 
@@ -170,7 +170,7 @@ git clone [Link]
 Entre na pasta principal:
 
 ```
-cd [nome do repositorio]
+cd Delivery_App
 ```
   
 Inicie o docker com o comando:
