@@ -77,7 +77,7 @@ function OrderDetail(props) {
       {
         order.id && (
           <div>
-            <h1 className="detail-title">Detalhes do pedidos</h1>
+            <h1 className="detail-title">Detalhes do pedido</h1>
             <div className="order-detail-container">
               <p
                 className="oder-detail-content"
