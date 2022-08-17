@@ -51,8 +51,6 @@ Também utilizei esse projeto para praticar e entender os princípios SOLID, o r
 
 ### Recursos úteis
 
-- [Artigos pessoais sobre Express](https://dev.to/gabrielhsilvestre/series/17270)
-- [Artigos pessoais sobre SOLID e POO](https://dev.to/gabrielhsilvestre/series/18165)
 - [Documentação do Sequelize](https://sequelize.org/)
 
 ## Autores
