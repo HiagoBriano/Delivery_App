@@ -85,7 +85,7 @@ git clone git@github.com:HiagoBriano/Delivery_App.git
 Entre na pasta do projeto:
 
 ```
-cd Delivery_App/backend
+cd Delivery_App/back-end
 ```
 
 Instale as dependências do projeto:
@@ -112,7 +112,7 @@ npm run dev
 Entre na pasta do projeto:
 
 ```
-cd Delivery_App/frontend
+cd Delivery_App/front-end
 ```
 
 Instale as dependencias:
