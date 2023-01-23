@@ -1,6 +1,20 @@
 version: "3.9"
 
 services:
+  frontend: # nome dado para identificar o serviço
+      container_name: frontend
+      build: ./front-end # caminho do dockerfile
+      environment:
+        - REACT_APP_HOSTNAME=localhost
+        - REACT_APP_BACKEND_PORT=3001
+      ports:
+        - 3000:3000 # primeiro é a porta que você quer acessar no PC e depois a porta que o aplicativo está rodando
+      command: npm start # comando a ser executado assim que a aplicação subir
+      restart: on-failure
+      depends_on: # Informa que depende de algum serviço para funcionar
+        backend: # nome do serviço
+          condition: service_started
+
   backend: # nome dado para identificar o serviço
     container_name: backend
     build: ./back-end # caminho do dockerfile
@@ -8,11 +22,11 @@ services:
       - PORT=3001
       - MYSQL_USER=root
       - MYSQL_PASSWORD=password
-      - MYSQL_PORT=3002
-      - MYSQL_DB_NAME=delivery-app
+      - MYSQL_PORT=3306
+      - HOSTNAME=mysql
     ports:
       - 3001:3001 # primeiro é a porta que você quer acessar no PC e depois a porta que o aplicativo está rodando
-    command: npm start # comando a ser executado assim que a aplicação subir
+    command: npm run docker # comando a ser executado assim que a aplicação subir
     restart: on-failure
     depends_on: # Informa que depende de algum serviço para funcionar
       mysql: # nome do serviço

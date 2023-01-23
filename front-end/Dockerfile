@@ -2,7 +2,7 @@
 FROM node:16-alpine
 
 # Pasta de trabalho no docker
-WORKDIR /app/backend
+WORKDIR /app/fontend
 
 # Copia os arquivos do PC para o docker
 COPY . ./
@@ -11,7 +11,7 @@ COPY . ./
 RUN npm install
 
 # Infoma a porta que eu quero exportar para o PC acessar
-EXPOSE 3001
+EXPOSE 3000
 
 # Comando para iniciar servidor
 CMD ["npm", "start"]

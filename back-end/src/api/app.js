@@ -23,7 +23,7 @@ app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 app.use('/products', productsRouter);
 app.use('/user', userRouter);
 app.use('/sales', saleRouter);
-app.get('/', (_req, res) => res.status(200).json({status: "Active"}));
+app.get('/', (_req, res) => res.status(200).json({status: `Active`}));
 app.use(express.static('public'));
 
 app.use(errorHandler);
