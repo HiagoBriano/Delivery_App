@@ -1,65 +1,37 @@
 version: "3.9"
+
 services:
-  frontend:
-    image: node:16-alpine
-    command: npm start # ou npm start
-    restart: on-failure
-    working_dir: /app/frontend
-    volumes:
-      - ./front-end:/app/frontend
-    ports:
-      - 3000:3000
-    environment:
-      - BACK_PORT=3001
-      - BACK_HOST=backend
-    depends_on:
-      backend:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "lsof", "-t", "-i:3000"] # Caso utilize outra porta interna para o front, altere ela aqui também
-      timeout: 10s
-      retries: 10
-  backend:
-    image: node:16-alpine
-    command: npm run dev
-    restart: on-failure
-    working_dir: /app/backend
-    volumes:
-      - ./back-end:/app/backend
-    ports:
-      - 3001:3001
-    tty: true
-    depends_on:
-      mysql: # mysql ou postgres
-        condition: service_healthy
+  backend: # nome dado para identificar o serviço
+    container_name: backend
+    build: ./back-end # caminho do dockerfile
     environment:
       - PORT=3001
       - MYSQL_USER=root
       - MYSQL_PASSWORD=password
-      - HOSTNAME=mysql # mysql ou postgres
-      - MYSQL_PORT=3306
+      - MYSQL_PORT=3002
       - MYSQL_DB_NAME=delivery-app
-    healthcheck:
-      test: ["CMD", "lsof", "-t", "-i:3001"] # Caso utilize outra porta interna para o back, altere ela aqui também
-      timeout: 10s
-      retries: 5
-  mysql:
-    image: mysql:8.0.21
-    container_name: db
     ports:
-      - 3002:3306
-    environment:
-      # - MYSQL_USER=trem
-      # - MYSQL_PASSWORD=password
+      - 3001:3001 # primeiro é a porta que você quer acessar no PC e depois a porta que o aplicativo está rodando
+    command: npm start # comando a ser executado assim que a aplicação subir
+    restart: on-failure
+    depends_on: # Informa que depende de algum serviço para funcionar
+      mysql: # nome do serviço
+        condition: service_healthy
+
+  mysql:
+    container_name: mysql
+    image: mysql:5.7.31 # Informa a imagem que eu quero ultilizar
+    environment: # local onde fica as variveis de ambiente
       - MYSQL_ROOT_PASSWORD=password
-      # - MYSQL_RANDOM_ROOT_PASSWORD=true
+      - TZ=America/Sao_Paulo
       - MYSQL_DATABASE=delivery-app
-    restart: "always"
+    ports: 
+      - 3002:3306 # primeiro é a porta que você quer acessar no PC e depois a porta que o aplicativo está rodando
+    command: --default-authentication-plugin=mysql_native_password --sql_mode=NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER --explicit_defaults_for_timestamp
+    restart: always # Caso tenha algum problema com o container ele vai reiniciar
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       interval: 30s
       timeout: 10s
       retries: 10
       start_period: 30s
-    cap_add:
-      - SYS_NICE # Deve omitir alertas menores

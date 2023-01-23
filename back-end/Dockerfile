@@ -9,8 +9,10 @@ COPY . ./
 
 # Comando para instalar as dependências
 RUN npm install
+RUN npm run predev
 
 # Infoma a porta que eu quero exportar para o PC acessar
 EXPOSE 3001
 
+# Comando para iniciar servidor
 CMD ["npm", "start"]

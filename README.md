@@ -101,6 +101,12 @@ MYSQL_USER=(nome do MySQL)
 MYSQL_PASSWORD=(sua senha)
 ```
 
+Populando o banco de dados:
+
+```
+npm run predev
+```
+
 Inicie o projeto:
 
 ```
