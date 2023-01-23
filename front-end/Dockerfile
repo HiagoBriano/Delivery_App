@@ -10,7 +10,7 @@ COPY . ./
 # Comando para instalar as dependências
 RUN npm install
 
-# Infoma a porta que eu quero exportar para o PC acessar
+# Informa a porta que eu quero exportar para o PC acessar
 EXPOSE 3000
 
 # Comando para iniciar servidor

@@ -99,12 +99,13 @@ Crie um arquivo `.env` com as seguintes informações:
 ```
 MYSQL_USER=(nome do MySQL)
 MYSQL_PASSWORD=(sua senha)
+MYSQL_PORT=(porta do MySql)
 ```
 
 Populando o banco de dados:
 
 ```
-npm run predev
+npm start
 ```
 
 Inicie o projeto:
