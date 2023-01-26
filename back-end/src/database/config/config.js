@@ -14,7 +14,7 @@ const options = {
   database: `${process.env.MYSQL_DB_NAME || 'delivery-app'}`,
   username: process.env.MYSQL_USER || 'root',
   password: process.env.MYSQL_PASSWORD || 'password',
-  dialect: 'mysql',
+  dialect: process.env.USED_DB || 'mysql',
   dialectOptions: {
     timezone: 'Z',
   },
