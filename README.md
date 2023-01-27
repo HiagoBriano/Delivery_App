@@ -41,6 +41,8 @@ A distribuidora de cervejas da dona Tereza está se informatizando! 🚀 Seu neg
 
 Criei um site de lista de tarefas para os colaboradores adicionarem suas tarefas. É possível consultar a tarefa de qualquer lugar, basta fazer login com a conta criada.
 
+ `Veja a aplicação rodando:` https://delivery-app-frontend.onrender.com
+
 #### Primeiro acesso?
 > É importante saber que para fazer o cadastro é preciso colocar um e-mail em um formato valido e uma senha de pelo menos 6 caracteres.
 

@@ -150,12 +150,15 @@ Criar um site capaz de gerenciar o [banco de dados](../back-end/), incluindo faz
   - Senha: --adm2@21!!--
 </details>
 
-
 ## Construído com
 
 - JavaScript
 - React.js
 - Axios
+
+## Veja a aplicação rodando
+
+`Acesse:` https://delivery-app-sage.vercel.app/
 
 #### Primeiro acesso?
 > É importante saber que para fazer o cadastro é preciso colocar um e-mail em um formato valido e uma senha de pelo menos 6 caracteres.

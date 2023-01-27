@@ -27,7 +27,7 @@ __Os usuários devem ser capaz de?__
 
 ### Links
 
-- URL da documentação: https://delivery-app-hbs.herokuapp.com/api/docs/
+- URL da documentação: https://delivery-app-backend-jhyg.onrender.com/api/docs/
 
 
 ## Meu processo
