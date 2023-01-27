@@ -39,8 +39,6 @@ A distribuidora de cervejas da dona Tereza está se informatizando! 🚀 Seu neg
 
 ## Aplicação rodando:
 
-Criei um site de lista de tarefas para os colaboradores adicionarem suas tarefas. É possível consultar a tarefa de qualquer lugar, basta fazer login com a conta criada.
-
  `Veja a aplicação rodando:` https://delivery-app-frontend.onrender.com
 
 #### Primeiro acesso?
