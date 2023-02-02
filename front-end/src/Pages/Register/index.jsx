@@ -17,7 +17,7 @@ export default function Register() {
   useEffect(() => {
     const regexEmail = /\S+@\S+\.\S+/;
     const minimumCharactersForPassword = 6;
-    const minimumCharactersForName = 12;
+    const minimumCharactersForName = 3;
 
     if (
       password.length >= minimumCharactersForPassword
