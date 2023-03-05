@@ -9,7 +9,7 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="40" height="40"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg" alt="ES Lint" width="40" height="40"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" width="40" height="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg" alt="Heroku" width="40" height="40"/>
+  <img src="https://cdn.iconscout.com/icon/free/png-512/amazon-aws-3628617-3029842.png?f=avif&w=256" alt="Aws" width="40" height="40"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" alt="Jest" width="40" height="40"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="40" height="40"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack" width="40" height="40"/>
@@ -39,7 +39,7 @@ A distribuidora de cervejas da dona Tereza está se informatizando! 🚀 Seu neg
 
 ## Aplicação rodando:
 
- `Veja a aplicação rodando:` https://delivery-app-frontend.onrender.com
+ `Veja a aplicação rodando:` http://lb-delivery-app-front-215997098.us-east-1.elb.amazonaws.com
 
 #### Primeiro acesso?
 > É importante saber que para fazer o cadastro é preciso colocar um e-mail em um formato valido e uma senha de pelo menos 6 caracteres.
