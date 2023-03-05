@@ -27,7 +27,7 @@ __Os usuários devem ser capaz de?__
 
 ### Links
 
-- URL da documentação: https://delivery-app-backend-jhyg.onrender.com/api/docs/
+- URL da documentação: http://lb-delivery-app-back-1035554469.us-east-1.elb.amazonaws.com/api/docs/
 
 
 ## Meu processo
