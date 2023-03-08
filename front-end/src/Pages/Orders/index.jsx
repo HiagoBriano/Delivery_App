@@ -43,7 +43,7 @@ function Orders() {
                 <CardOrders order={ current } user="customer" />
               </div>
             ))
-          : <h3>Você ainda não fez nenhuma compra.</h3>}
+            : <h3>Você ainda não fez nenhuma compra.</h3>}
         </div>
       </div>
     </>
