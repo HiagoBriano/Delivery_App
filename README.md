@@ -39,7 +39,7 @@ A distribuidora de cervejas da dona Tereza está se informatizando! 🚀 Seu neg
 
 ## Aplicação rodando:
 
- `Veja a aplicação rodando:` http://lb-delivery-app-front-215997098.us-east-1.elb.amazonaws.com
+ `Veja a aplicação rodando:` https://HiagoBriano.github.io/Delivery_App
 
 #### Primeiro acesso?
 > É importante saber que para fazer o cadastro é preciso colocar um e-mail em um formato valido e uma senha de pelo menos 6 caracteres.

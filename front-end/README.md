@@ -158,7 +158,7 @@ Criar um site capaz de gerenciar o [banco de dados](../back-end/), incluindo faz
 
 ## Veja a aplicação rodando
 
-`Acesse:` http://lb-delivery-app-front-215997098.us-east-1.elb.amazonaws.com
+`Acesse:` https://HiagoBriano.github.io/Delivery_App
 
 #### Primeiro acesso?
 > É importante saber que para fazer o cadastro é preciso colocar um e-mail em um formato valido e uma senha de pelo menos 6 caracteres.
